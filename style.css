@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+   /* Colors */
+   --primary-color: #f23a2e;
+   --white-color: #ffffff;
+   --black-color: #212121;
+
+   /* Fonts */
+   --heading-font: "Playfair Display", serif;
+   --body-font: "Work Sans", sans-serif;
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: #f7f6fe;
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: var(--heading-font);
+   scroll-behavior: smooth;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   height: fit-content;
+   padding-bottom: -8dvh;
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+   overflow: hidden;
+}
+
+h1 span {
+   display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+
+   h1 {
+      width: 80%;
+      font-size: 1.8rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+   h1 {
+      width: 80%;
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+   h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+   h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+   h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+
+   h1 {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+}
+
+@media (min-width: 1601px) {
+
+   h1 {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+}
