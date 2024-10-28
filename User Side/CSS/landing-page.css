@@ -6,6 +6,7 @@
    --primary-color: #f23a2e;
    --white-color: #ffffff;
    --black-color: #212121;
+   --lightGrey-color: #f8f9fb;
 
    /* Fonts */
    --heading-font: "Playfair Display", serif;
@@ -31,25 +32,39 @@ body {
    color: var(--black-color);
    font-family: var(--body-font);
    scroll-behavior: smooth;
-   background-color: #f23a2e;
+}
+
+/* Header Section */
+
+#header {
+   height: 100dvh;
+   width: 100dvw;
+   position: relative;
+   overflow: hidden;
+
 }
 
 /* Navbar CSS */
 
 #nav {
-   width: 80dvw;
-   background-color: var(--white-color);
+   width: 100dvw;
    padding: 4dvh 2dvw 2dvh 2dvw;
-   margin: auto;
+   color: var(--white-color);
+   top: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+   z-index: 100;
 }
 
 #nav nav {
-   width: 100%;
+   width: 80%;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
+   margin: auto;
 }
 
 #nav nav #navLogo img {
@@ -88,13 +103,68 @@ body {
    display: none;
 }
 
+/* Home Section CSS */
+
+#Home {
+   overflow: hidden;
+   height: 100dvh;
+   width: 100dvw;
+   color: var(--white-color);
+   background-image: url("../../Assets/User Side/Images/Home-bg.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#Home #homeBox {
+   height: 100dvh;
+   width: 100dvw;
+   position: absolute;
+   opacity: 50%;
+   z-index: 0;
+   background-color: #212121;
+}
+
+#Home #homeContent {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+   text-align: center;
+}
+
+#Home #homeContent #homeTagline {
+   font-size: 4rem;
+   font-weight: 700;
+   font-family: var(--heading-font);
+}
+
+#Home #homeContent #homeLorem {
+   font-size: 0.85rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+}
+
 @media only screen and (max-width: 480px) {
    #nav {
-      width: 90dvw;
+      width: 100dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
+      width: 90%;
       display: flex;
       gap: 2dvh;
    }
@@ -110,13 +180,30 @@ body {
 
    #nav nav #navBurger {
       display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 600;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.6rem;
+      letter-spacing: 0.1rem;
    }
 
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
    #nav {
-      width: 90dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
@@ -126,6 +213,7 @@ body {
    }
 
    #nav nav #navLogo img {
+      width: 90%;
       height: 40px;
    }
 
@@ -136,17 +224,35 @@ body {
 
    #nav nav #navBurger {
       display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.7rem;
+      letter-spacing: 0.15rem;
    }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
    #nav {
-      width: 90dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
       display: flex;
+      width: 90%;
       gap: 2dvh;
    }
 
@@ -161,22 +267,40 @@ body {
 
    #nav nav #navBurger {
       display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.75rem;
+      letter-spacing: 0.18rem;
    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
    #nav {
-      width: 80dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
+      width: 80%;
       display: flex;
       gap: 2dvh;
    }
 
    #nav nav #navLogo img {
-      height: 40px;
+      height: 45px;
    }
 
    #nav nav #navPages,
@@ -187,21 +311,39 @@ body {
    #nav nav #navBurger {
       display: inline-block;
    }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3.5rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
    #nav {
-      width: 90dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
+      width: 90%;
       display: flex;
       gap: 2dvh;
    }
 
    #nav nav #navLogo img {
-      height: 40px;
+      height: 50px;
    }
 
    #nav nav #navPages,
@@ -211,22 +353,40 @@ body {
 
    #nav nav #navBurger {
       display: none;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
    }
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
    #nav {
-      width: 90dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
+      width: 90%;
       display: flex;
       gap: 2dvh;
    }
 
    #nav nav #navLogo img {
-      height: 40px;
+      height: 50px;
    }
 
    #nav nav #navPages,
@@ -236,22 +396,40 @@ body {
 
    #nav nav #navBurger {
       display: none;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
    }
 }
 
 @media (min-width: 1601px) {
    #nav {
-      width: 90dvw;
       padding: 4dvh 2dvw 2dvh 2dvw;
    }
 
    #nav nav {
+      width: 90%;
       display: flex;
       gap: 2dvh;
    }
 
    #nav nav #navLogo img {
-      height: 40px;
+      height: 50px;
    }
 
    #nav nav #navPages,
@@ -262,4 +440,32 @@ body {
    #nav nav #navBurger {
       display: none;
    }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
+}
+
+/* Room section */
+
+#Rooms {
+   overflow: hidden;
+   height: 100dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--lightGrey-color);
 }
