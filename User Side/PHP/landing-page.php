@@ -27,7 +27,7 @@
                <a href="#Home">Home</a>
                <a href="#Rooms">Rooms</a>
                <a href="#">Events</a>
-               <a href="#">About</a>
+               <a href="#About">About</a>
                <a href="#">Contact</a>
             </div>
 
@@ -115,6 +115,22 @@
 
    </section>
 
+   <section id="About">
+      <div id="aboutLeft">
+         <img src="../../Assets/User Side/Images/about-img.png" alt="">
+      </div>
+
+
+      <div id="aboutRight">
+         <div id="aboutTitle">About Us
+            <hr>
+         </div>
+         <div id="aboutContent">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magnam quisquam. Et quaerat corporis temporibus, amet vero animi sunt ipsam eligendi totam voluptatem!</div>
+            <span>Watch Video <img src="../../Assets/User Side/Vectors/right-arrow.svg" alt=""></span>
+         </div>
+      </div>
+   </section>
    <script src="../JS/landing-page.js"></script>
 </body>
 

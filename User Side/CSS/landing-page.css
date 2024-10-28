@@ -3,7 +3,7 @@
 :root {
 
    /* Colors */
-   --primary-color: #f23a2e;
+   --primary-color: #f13b2e;
    --white-color: #ffffff;
    --black-color: #212121;
    --lightGrey-color: #f8f9fb;
@@ -796,37 +796,233 @@ body {
 
 @media (min-width: 1601px) {
    #Rooms {
-         height: fit-content;
-         gap: 6dvh;
-         padding: 4dvh 0 4dvh 0;
-      }
-   
-      #Rooms #roomTitle {
-         width: 90%;
-         height: fit-content;
-      }
-   
-      #Rooms #roomTitle hr {
-         width: 20%;
-      }
-   
-      #Rooms #roomGrid {
-         width: 90%;
-      }
-   
-      #Rooms #roomGrid .roomCard {
-         width: 25%;
-         height: 35dvh;
-      }
-   
-      #Rooms #roomGrid .roomCard .cardTitle {
-         text-transform: uppercase;
-         font-size: 1.25rem;
-         letter-spacing: 0rem;
-      }
-   
-      #Rooms #roomGrid .roomCard .cardPrice {
-         font-size: 1rem;
-         opacity: 70%;
-      }
+      height: fit-content;
+      gap: 6dvh;
+      padding: 4dvh 0 4dvh 0;
+   }
+
+   #Rooms #roomTitle {
+      width: 90%;
+      height: fit-content;
+   }
+
+   #Rooms #roomTitle hr {
+      width: 20%;
+   }
+
+   #Rooms #roomGrid {
+      width: 90%;
+   }
+
+   #Rooms #roomGrid .roomCard {
+      width: 25%;
+      height: 35dvh;
+   }
+
+   #Rooms #roomGrid .roomCard .cardTitle {
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      letter-spacing: 0rem;
+   }
+
+   #Rooms #roomGrid .roomCard .cardPrice {
+      font-size: 1rem;
+      opacity: 70%;
+   }
 }
+
+
+/* About Section */
+
+#About {
+   overflow: hidden;
+   height: 60dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--white-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8dvh;
+   flex-direction: row;
+   flex-wrap: wrap
+}
+
+#About #aboutLeft {
+   overflow: hidden;
+   height: 100%;
+   width: 50%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+#About #aboutLeft img {
+   width: auto;
+   height: 100%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   object-fit: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   margin: 1dvh 1dvh;
+}
+
+#About #aboutRight {
+   overflow: hidden;
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 6dvh;
+}
+
+#About #aboutRight #aboutTitle {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: start;
+   gap: 1dvh;
+   font-family: var(--heading-font);
+   font-size: 2.5rem;
+}
+
+#About #aboutRight hr {
+   all: unset;
+   width: 10%;
+   height: 1px;
+   background-color: var(--black-color);
+   border-radius: 1000px;
+}
+
+#About #aboutRight #aboutContent {
+   width: 60%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: start;
+   gap: 2dvh;
+   font-family: var(--body-font);
+   font-size: 1rem;
+   line-height: 1.8;
+}
+
+#About #aboutRight #aboutContent div {
+   opacity: 80%;
+}
+
+#About #aboutRight #aboutContent span {
+   display: flex;
+   gap: 1dvh;
+   justify-content: start;
+   align-items: center;
+   font-size: 1rem;
+   font-style: var(--primary-color);
+   text-transform: uppercase;
+   color: var(--primary-color);
+   font-weight: 500;
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 100%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-family: var(--heading-font);
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 30%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-family: var(--body-font);
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-style: var(--primary-color);
+      text-transform: uppercase;
+      color: var(--primary-color);
+      font-weight: 500;
+      cursor: pointer;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {}
+
+@media (min-width: 601px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) and (max-width: 1600px) {}
+
+@media (min-width: 1601px) {}
