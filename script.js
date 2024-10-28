@@ -19,7 +19,7 @@ function breakTheText() {
 breakTheText();
 
 gsap.from("h1 span", {
-   y: 50,
+   y: 200,
    duration: 0.6,
    delay: 0.5,
    stagger: 0.15,
