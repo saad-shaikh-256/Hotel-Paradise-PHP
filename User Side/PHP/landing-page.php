@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Hotel Paradise - by shaikhsaad256@gmail.com</title>
 
-   <!-- <meta http-equiv="refresh" content="1"> -->
+   <!-- <meta http-equiv="refresh" content="20"> -->
 
    <link rel="shortcut icon" href="../../Assets/Common/Vectors/Logo.svg" type="image/x-icon">
    <link rel="stylesheet" href="../CSS/landing-page.css">
@@ -25,7 +25,7 @@
 
             <div id="navPages">
                <a href="#Home">Home</a>
-               <a href="#">Rooms</a>
+               <a href="#Rooms">Rooms</a>
                <a href="#">Events</a>
                <a href="#">About</a>
                <a href="#">Contact</a>
@@ -61,53 +61,55 @@
 
       <div id="roomGrid">
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Standard Room</div>
                <div class="cardPrice">$350.00 / per night</div>
             </div>
-         </div>
+         </a>
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Family Room</div>
                <div class="cardPrice">$400.00 / per night</div>
             </div>
-         </div>
+         </a>
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Single Room</div>
                <div class="cardPrice">$255.00 / per night</div>
             </div>
-         </div>
+         </a>
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Deluxe Room</div>
                <div class="cardPrice">$150.00 / per night</div>
             </div>
-         </div>
+         </a>
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage">
+               <img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Room Image">
+            </div>
             <div class="cardContent">
                <div class="cardTitle">Luxury Room</div>
                <div class="cardPrice">$200.00 / per night</div>
             </div>
-         </div>
+         </a>
 
-         <div class="roomCard">
-            <img src="" alt="">
+         <a class="roomCard">
+            <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Single Room</div>
                <div class="cardPrice">$155.00 / per night</div>
             </div>
-         </div>
+         </a>
 
       </div>
 
