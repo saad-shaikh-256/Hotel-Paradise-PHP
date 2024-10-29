@@ -971,13 +971,12 @@ body {
    #About #aboutRight #aboutTitle {
       width: 100%;
       gap: 1dvh;
-      font-family: var(--heading-font);
       font-size: 2.5rem;
    }
 
    #About #aboutRight hr {
       all: unset;
-      width: 30%;
+      width: 20%;
       height: 1px;
       background-color: var(--black-color);
       border-radius: 1000px;
@@ -992,7 +991,6 @@ body {
       justify-content: start;
       align-items: start;
       gap: 2dvh;
-      font-family: var(--body-font);
       font-size: 1rem;
       line-height: 1.8;
    }
@@ -1007,22 +1005,441 @@ body {
       justify-content: start;
       align-items: center;
       font-size: 1rem;
-      font-style: var(--primary-color);
-      text-transform: uppercase;
-      color: var(--primary-color);
       font-weight: 500;
-      cursor: pointer;
    }
 }
 
-@media (min-width: 481px) and (max-width: 600px) {}
+@media (min-width: 481px) and (max-width: 600px) {
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
 
-@media (min-width: 601px) and (max-width: 768px) {}
+   }
 
-@media (min-width: 769px) and (max-width: 992px) {}
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 90%;
+      flex-direction: column;
+   }
 
-@media (min-width: 993px) and (max-width: 1200px) {}
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
 
-@media (min-width: 1201px) and (max-width: 1600px) {}
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
 
-@media (min-width: 1601px) {}
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 20%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 90%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 20%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 3dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 2dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 45%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 45%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2dvh;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 80%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 0.9rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 70%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+}
+
+@media (min-width: 1601px) {
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+}
