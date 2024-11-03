@@ -429,6 +429,43 @@ body {
    height: 36px;
 }
 
+/* Stats section */
+
+#Stats {
+   overflow: hidden;
+   height: 15dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20dvw;
+   background-color: var(--lightGrey-color);
+}
+
+#Stats .statsBox {
+   width: 25%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1dvh;
+}
+
+#Stats .statsBox .statsNumber {
+   font-size: 2.25rem;
+   font-weight: 700;
+}
+
+#Stats .statsBox .statsTitle {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
 @media only screen and (max-width: 480px) {
    #nav {
       width: 100dvw;
@@ -615,6 +652,28 @@ body {
    #Features #featuresGrid .featuresCard .featuresImage svg {
       width: 28px;
       height: 28px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 30dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 40%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
    }
 }
 
@@ -805,6 +864,28 @@ body {
       width: 28px;
       height: 28px;
    }
+
+   /* Stats section */
+
+   #Stats {
+      height: 30dvh;
+      padding: 0 20dvw;
+   }
+
+   #Stats .statsBox {
+      width: 40%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -994,6 +1075,28 @@ body {
       width: 28px;
       height: 28px;
    }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -1180,6 +1283,28 @@ body {
       width: 28px;
       height: 28px;
    }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -1364,6 +1489,28 @@ body {
    #Features #featuresGrid .featuresCard .featuresImage svg {
       width: 32px;
       height: 32px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.8rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
    }
 }
 
@@ -1550,6 +1697,26 @@ body {
       width: 34px;
       height: 34px;
    }
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
+   }
 }
 
 @media (min-width: 1601px) {
@@ -1575,8 +1742,6 @@ body {
    #nav nav #navBurger {
       display: none;
    }
-
-   /* Home Section CSS */
 
    #Home #homeContent {
       height: 100%;
@@ -1734,5 +1899,25 @@ body {
    #Features #featuresGrid .featuresCard .featuresImage svg {
       width: 36px;
       height: 36px;
+   }
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 2.2rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
    }
 }
