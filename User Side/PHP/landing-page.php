@@ -209,6 +209,26 @@
 
    </section>
 
+   <section id="Stats">
+      <div class="statsBox">
+         <div class="statsNumber">8</div>
+         <div class="statsTitle">Years of Service</div>
+      </div>
+      <div class="statsBox">
+         <div class="statsNumber">459</div>
+         <div class="statsTitle">Sq. Meter Area</div>
+      </div>
+      <div class="statsBox">
+         <div class="statsNumber">50</div>
+         <div class="statsTitle">Nice Rooms</div>
+      </div>
+      <div class="statsBox">
+         <div class="statsNumber">3786</div>
+         <div class="statsTitle">
+            Happy Visitors</div>
+      </div>
+   </section>
+
    <script src="../JS/landing-page.js"></script>
 </body>
 
