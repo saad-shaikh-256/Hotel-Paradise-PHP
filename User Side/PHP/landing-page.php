@@ -229,6 +229,24 @@
       </div>
    </section>
 
+   <section id="Gallery">
+      <div id="galleryTitle">Our Gallery
+         <hr>
+      </div>
+
+      <div id="galleryGrid">
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-4.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/Home-bg.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Hotel Image"></div>
+         <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Hotel Image"></div>
+
+      </div>
+
+   </section>
    <script src="../JS/landing-page.js"></script>
 </body>
 
