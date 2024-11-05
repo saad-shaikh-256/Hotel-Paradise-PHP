@@ -233,7 +233,6 @@
       <div id="galleryTitle">Our Gallery
          <hr>
       </div>
-
       <div id="galleryGrid">
          <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Hotel Image"></div>
          <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Hotel Image"></div>
@@ -243,9 +242,50 @@
          <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Hotel Image"></div>
          <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Hotel Image"></div>
          <div class="gridImages"><img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Hotel Image"></div>
-
       </div>
+   </section>
 
+   <section id="Events">
+      <div id="eventsTitle">Upcoming Events
+         <hr>
+      </div>
+      <div id="eventsGrid">
+         <div class="eventsCard">
+            <div class="eventsImg">
+               <img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="">
+            </div>
+            <div class="eventsContent">
+               <div class="eventsHeading">Lorem ipsum dolor sit amet.</div>
+               <span class="subHeading">Nov 03rd, 2024 • By Saad Shaikh
+               </span>
+            </div>
+            <div class="eventsLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius ad ratione. Eum numquam quas consequuntur soluta ipsum nisi.</div>
+         </div>
+
+         <div class="eventsCard">
+            <div class="eventsImg">
+               <img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="">
+            </div>
+            <div class="eventsContent">
+               <div class="eventsHeading">Lorem ipsum dolor sit amet.</div>
+               <span class="subHeading">Nov 03rd, 2024 • By Saad Shaikh
+               </span>
+            </div>
+            <div class="eventsLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius ad ratione. Eum numquam quas consequuntur soluta ipsum nisi.</div>
+         </div>
+
+         <div class="eventsCard">
+            <div class="eventsImg">
+               <img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="">
+            </div>
+            <div class="eventsContent">
+               <div class="eventsHeading">Lorem ipsum dolor sit amet.</div>
+               <span class="subHeading">Nov 03rd, 2024 • By Saad Shaikh
+               </span>
+            </div>
+            <div class="eventsLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius ad ratione. Eum numquam quas consequuntur soluta ipsum nisi.</div>
+         </div>
+      </div>
    </section>
    <script src="../JS/landing-page.js"></script>
 </body>
