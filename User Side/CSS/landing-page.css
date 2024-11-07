@@ -354,8 +354,8 @@ body {
    opacity: 80%;
 }
 
-#About #aboutRight #aboutContent >a{
-  all: unset;
+#About #aboutRight #aboutContent>a {
+   all: unset;
 }
 
 #About #aboutRight #aboutContent span {
@@ -726,6 +726,58 @@ body {
    font-size: 0.9rem;
    opacity: 80%;
    color: var(--primary-color);
+}
+
+#Footer {
+   overflow: hidden;
+   height: fit-content;
+   width: 100dvw;
+   color: var(--lightGrey-color);
+   background-color: #333333;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 12dvh 8dvw;
+}
+
+#Footer .footerContent {
+   overflow: hidden;
+   height: fit-content;
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+}
+
+#Footer .footerContent .footerHeading {
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: var(--white-color);
+}
+
+#Footer .footerContent .footerLorem .footerLinks,
+#Footer .footerContent .footerLorem .footerLinks a,
+#Footer .footerContent .footerLorem {
+   all: unset;
+   color: var(--lightGrey-color);
+   opacity: 80%;
+   width: 80%;
+   font-size: 1rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1dvh;
+   cursor: pointer;
+
+   &:hover{
+      opacity: 100%;
+      color: var(--white-color);
+      font-size: 1.05rem;
+      transition: 0.5s;
+}
 }
 
 @media only screen and (max-width: 480px) {

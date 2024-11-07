@@ -323,31 +323,42 @@
    <section id="Footer">
       <div class="footerContent">
          <div class="footerHeading">About</div>
-         <div class="footerLinks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</div>
-      </div>
-      <div class="footerContent">
-         <div class="footerHeading">Quick Menu</div>
-         <div class="footerLinks"><a href="#Home"></a></div>
-         <div class="footerLinks"><a href="about-page.php"></a></div>
-         <div class="footerLinks"><a href="rooms-page.php"></a></div>
-         <div class="footerLinks"><a href="event-page.php"></a></div>
-         <div class="footerLinks"><a href="contact-page.php"></a></div>
-      </div>
-      <div class="footerContent">
-         <div class="footerHeading">Lorem ipsum</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-      </div>
-      <div class="footerContent">
-         <div class="footerHeading">Lorem ipsum</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-         <div class="footerLinks">lorem</div>
-      </div>
+         <div class="footerLorem">
+
+            <div class="footerLinks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</div>
+         </div>
+         </div>
+         <div class="footerContent">
+            <div class="footerHeading">Quick Menu</div>
+            <div class="footerLorem">
+               <div class="footerLinks"><a href="#Home">Home</a></div>
+               <div class="footerLinks"><a href="about-page.php">About</a></div>
+               <div class="footerLinks"><a href="rooms-page.php">Rooms</a></div>
+               <div class="footerLinks"><a href="event-page.php">Event</a></div>
+               <div class="footerLinks"><a href="contact-page.php">Contact</a></div>
+            </div>
+         </div>
+         <div class="footerContent">
+            <div class="footerHeading">Lorem ipsum</div>
+            <div class="footerLorem">
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+            </div>
+         </div>
+         <div class="footerContent">
+            <div class="footerHeading">Lorem ipsum</div>
+            <div class="footerLorem">
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+               <div class="footerLinks">lorem</div>
+            </div>
+         </div>
    </section>
+   
+   
    <script src="../JS/landing-page.js"></script>
 </body>
 
