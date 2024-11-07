@@ -6,8 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Hotel Paradise - by shaikhsaad256@gmail.com</title>
 
-   <!-- <meta http-equiv="refresh" content="20"> -->
-
    <link rel="shortcut icon" href="../../Assets/Common/Vectors/Logo.svg" type="image/x-icon">
    <link rel="stylesheet" href="../CSS/landing-page.css">
 
