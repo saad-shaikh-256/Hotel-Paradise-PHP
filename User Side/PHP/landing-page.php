@@ -25,16 +25,16 @@
 
             <div id="navPages">
                <a href="#Home">Home</a>
-               <a href="#Rooms">Rooms</a>
-               <a href="#">Events</a>
-               <a href="#About">About</a>
-               <a href="#">Contact</a>
+               <a href="rooms-page.php">Rooms</a>
+               <a href="event-page.php">Events</a>
+               <a href="about-page.php">About</a>
+               <a href="contact-page.php">Contact</a>
             </div>
 
             <div id="navAuth">
-               <a href="#">Login</a>
-               <a href="#">Sign-up</a>
-               <a href="#">Logout</a>
+               <a href="../../login-page.php">Login</a>
+               <a href="../../signup-page.php">Sign-up</a>
+               <a href="../../logout-page.php">Logout</a>
             </div>
 
             <div id="navBurger">
@@ -60,7 +60,7 @@
 
       <div id="roomGrid">
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Standard Room</div>
@@ -68,7 +68,7 @@
             </div>
          </a>
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Family Room</div>
@@ -76,7 +76,7 @@
             </div>
          </a>
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Single Room</div>
@@ -84,7 +84,7 @@
             </div>
          </a>
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-1.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Deluxe Room</div>
@@ -92,7 +92,7 @@
             </div>
          </a>
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage">
                <img src="../../Assets/User Side/Images/roomImg-2.jpg" alt="Room Image">
             </div>
@@ -102,7 +102,7 @@
             </div>
          </a>
 
-         <a class="roomCard">
+         <a href="reservation-page.php" class="roomCard">
             <div class="roomImage"> <img src="../../Assets/User Side/Images/roomImg-3.jpg" alt="Room Image"> </div>
             <div class="cardContent">
                <div class="cardTitle">Single Room</div>
@@ -125,7 +125,7 @@
          </div>
          <div id="aboutContent">
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magnam quisquam. Et quaerat corporis temporibus, amet vero animi sunt ipsam eligendi totam voluptatem!</div>
-            <span>Watch Video <img src="../../Assets/User Side/Vectors/right-arrow.svg" alt=""></span>
+            <a href="about-page.php"> <span>Explore More <img src="../../Assets/User Side/Vectors/right-arrow.svg" alt=""></span></a>
          </div>
       </div>
    </section>
@@ -285,6 +285,67 @@
             </div>
             <div class="eventsLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius ad ratione. Eum numquam quas consequuntur soluta ipsum nisi.</div>
          </div>
+      </div>
+   </section>
+
+   <section id="Review">
+      <div id="reviewTitle">What People Say
+         <hr>
+      </div>
+      <div id="reviewGrid">
+
+         <div class="reviewCard">
+            <div class="reviewContent">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur neque quam id iste
+            </div>
+            <div class="reviewName">Suzanne Crona</div>
+            <div class="reviewEmail">@suzannecrona</div>
+         </div>
+
+         <div class="reviewCard">
+            <div class="reviewContent">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur neque quam id iste
+            </div>
+            <div class="reviewName">Suzanne Crona</div>
+            <div class="reviewEmail">@suzannecrona</div>
+         </div>
+         <div class="reviewCard">
+            <div class="reviewContent">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur neque quam id iste
+            </div>
+            <div class="reviewName">Suzanne Crona</div>
+            <div class="reviewEmail">@suzannecrona</div>
+         </div>
+
+      </div>
+   </section>
+
+   <section id="Footer">
+      <div class="footerContent">
+         <div class="footerHeading">About</div>
+         <div class="footerLinks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Quick Menu</div>
+         <div class="footerLinks"><a href="#Home"></a></div>
+         <div class="footerLinks"><a href="about-page.php"></a></div>
+         <div class="footerLinks"><a href="rooms-page.php"></a></div>
+         <div class="footerLinks"><a href="event-page.php"></a></div>
+         <div class="footerLinks"><a href="contact-page.php"></a></div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Lorem ipsum</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Lorem ipsum</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
+         <div class="footerLinks">lorem</div>
       </div>
    </section>
    <script src="../JS/landing-page.js"></script>

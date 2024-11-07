@@ -354,6 +354,10 @@ body {
    opacity: 80%;
 }
 
+#About #aboutRight #aboutContent >a{
+  all: unset;
+}
+
 #About #aboutRight #aboutContent span {
    display: flex;
    gap: 1dvh;
@@ -643,6 +647,86 @@ body {
    letter-spacing: 1.2;
 }
 
+#Review {
+   overflow: hidden;
+   height: 80dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--lightGrey-color);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 4dvh;
+}
+
+#Review #reviewTitle {
+   width: 80%;
+   height: 10dvh;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1dvh;
+   font-family: var(--heading-font);
+   font-size: 2.5rem;
+   position: relative;
+
+}
+
+#Review #reviewTitle hr {
+   all: unset;
+   width: 6%;
+   height: 1px;
+   background-color: var(--black-color);
+   border-radius: 1000px;
+}
+
+#Review #reviewGrid {
+   width: 80%;
+   height: 40dvh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 2dvw;
+}
+
+#Review #reviewGrid .reviewCard {
+   width: 30%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 1dvh;
+   text-align: center;
+   flex-wrap: wrap;
+   padding: 4dvh 4dvw;
+}
+
+#Review #reviewGrid .reviewCard .reviewContent {
+   font-size: 1rem;
+   padding-bottom: 1dvh;
+}
+
+#Review #reviewGrid .reviewCard .reviewName {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+#Review #reviewGrid .reviewCard .reviewEmail {
+   font-size: 0.9rem;
+   opacity: 80%;
+   color: var(--primary-color);
+}
 
 @media only screen and (max-width: 480px) {
    #nav {
@@ -783,6 +867,7 @@ body {
    #About #aboutRight #aboutContent div {
       opacity: 80%;
    }
+
 
    #About #aboutRight #aboutContent span {
       display: flex;
@@ -965,6 +1050,59 @@ body {
       font-size: 0.8rem;
       opacity: 70%;
       letter-spacing: 1.2;
+   }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 90%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 90%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 100%;
+   }
+
+   #Review #reviewGrid>div:nth-child(2),
+   #Review #reviewGrid>div:nth-child(3) {
+      display: none;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: .9rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 0.9rem;
+      opacity: 80%;
+      color: var(--primary-color);
    }
 }
 
@@ -1290,6 +1428,59 @@ body {
       opacity: 70%;
       letter-spacing: 1.2;
    }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 90%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 90%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 90%;
+   }
+
+   #Review #reviewGrid>div:nth-child(2),
+   #Review #reviewGrid>div:nth-child(3) {
+      display: none;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: .9rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 0.9rem;
+      opacity: 80%;
+      color: var(--primary-color);
+   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -1440,6 +1631,8 @@ body {
       font-size: 1rem;
       font-weight: 500;
    }
+
+
 
    #Features {
       overflow: hidden;
@@ -1612,6 +1805,59 @@ body {
       font-size: 0.8rem;
       opacity: 70%;
       letter-spacing: 1.2;
+   }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 80%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 80%;
+   }
+
+   #Review #reviewGrid>div:nth-child(2),
+   #Review #reviewGrid>div:nth-child(3) {
+      display: none;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: .9rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 0.9rem;
+      opacity: 80%;
+      color: var(--primary-color);
    }
 }
 
@@ -1932,6 +2178,58 @@ body {
       opacity: 70%;
       letter-spacing: 1.2;
    }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 80%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 45%;
+   }
+
+   #Review #reviewGrid>div:nth-child(2) {
+      display: none;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: .9rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 0.9rem;
+      opacity: 80%;
+      color: var(--primary-color);
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -2250,6 +2548,54 @@ body {
       opacity: 70%;
       letter-spacing: 1.2;
    }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 80%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 30%;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: 1rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1.1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 1rem;
+      opacity: 80%;
+      color: var(--primary-color);
+   }
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
@@ -2562,6 +2908,54 @@ body {
       opacity: 70%;
       letter-spacing: 1.2;
    }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 80%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 30%;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: 1rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1.1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 1rem;
+      opacity: 80%;
+      color: var(--primary-color);
+   }
 }
 
 @media (min-width: 1601px) {
@@ -2801,75 +3195,123 @@ body {
       width: 100%;
    }
 
-      #Events {
-         height: fit-content;
-         width: 100dvw;
-         gap: 1dvh;
-         padding: 4dvh 0;
-      }
-   
-      #Events #eventsTitle {
-         width: 80%;
-         height: 10dvh;
-         gap: 1dvh;
-         font-size: 2.5rem;
-      }
-   
-      #Events #eventsTitle hr {
-         all: unset;
-         width: 6%;
-         height: 1px;
-         background-color: var(--black-color);
-         border-radius: 1000px;
-      }
-   
-      #Events #eventsGrid {
-         width: 80%;
-         height: 60dvh;
-         gap: 2dvw;
-      }
-   
-      #Events #eventsGrid .eventsCard {
-         width: 25%;
-         height: 60dvh;
-         gap: 2dvh;
-         flex-wrap: wrap;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsImg {
-         width: 100%;
-         height: auto;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsImg img {
-         width: 100%;
-         height: auto;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsContent {
-         width: 100%;
-         gap: 1dvh;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsContent .eventsHeading {
-         width: 100%;
-         font-size: 1.2rem;
-         font-weight: 500;
-         opacity: 90%;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsContent .subHeading {
-         width: 100%;
-         opacity: 80%;
-         display: flex;
-         flex-direction: row;
-         font-size: 0.9rem;
-      }
-   
-      #Events #eventsGrid .eventsCard .eventsLorem {
-         width: 95%;
-         font-size: 1.1rem;
-         opacity: 70%;
-         letter-spacing: 1.2;
-      }
+   #Events {
+      height: fit-content;
+      width: 100dvw;
+      gap: 1dvh;
+      padding: 4dvh 0;
+   }
+
+   #Events #eventsTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Events #eventsTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Events #eventsGrid {
+      width: 80%;
+      height: 60dvh;
+      gap: 2dvw;
+   }
+
+   #Events #eventsGrid .eventsCard {
+      width: 25%;
+      height: 60dvh;
+      gap: 2dvh;
+      flex-wrap: wrap;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsImg {
+      width: 100%;
+      height: auto;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsImg img {
+      width: 100%;
+      height: auto;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsContent {
+      width: 100%;
+      gap: 1dvh;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsContent .eventsHeading {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 90%;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsContent .subHeading {
+      width: 100%;
+      opacity: 80%;
+      display: flex;
+      flex-direction: row;
+      font-size: 0.9rem;
+   }
+
+   #Events #eventsGrid .eventsCard .eventsLorem {
+      width: 95%;
+      font-size: 1.1rem;
+      opacity: 70%;
+      letter-spacing: 1.2;
+   }
+
+   #Review {
+      height: fit-content;
+      width: 100dvw;
+      gap: 2dvh;
+      padding: 8dvh 0;
+   }
+
+   #Review #reviewTitle {
+      width: 80%;
+      height: 10dvh;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Review #reviewTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Review #reviewGrid {
+      width: 80%;
+      height: fit-content;
+      gap: 2dvw;
+   }
+
+   #Review #reviewGrid .reviewCard {
+      width: 30%;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewContent {
+      font-size: 1rem;
+      padding-bottom: 1dvh;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewName {
+      font-size: 1.1rem;
+      font-weight: 600;
+   }
+
+   #Review #reviewGrid .reviewCard .reviewEmail {
+      font-size: 1rem;
+      opacity: 80%;
+      color: var(--primary-color);
+   }
 }
