@@ -22,8 +22,8 @@
             </div>
 
             <div id="navPages">
-               <a href="#Home">Home</a>
-               <a href="rooms-page.php">Rooms</a>
+               <a href="landing-page.php">Home</a>
+               <a href="#Rooms">Rooms</a>
                <a href="event-page.php">Events</a>
                <a href="about-page.php">About</a>
                <a href="contact-page.php">Contact</a>
@@ -168,7 +168,7 @@
       document.getElementById('year').textContent = new Date().getFullYear();
    </script>
 
-   <script src="../JS/landing-page.js"></script>
+   <script src="../JS/rooms-page.js"></script>
 </body>
 
 </html>

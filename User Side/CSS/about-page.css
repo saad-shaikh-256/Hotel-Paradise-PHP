@@ -1,0 +1,2198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+   /* Colors */
+   --primary-color: #f13b2e;
+   --white-color: #ffffff;
+   --black-color: #212121;
+   --lightGrey-color: #f8f9fb;
+
+   /* Fonts */
+   --heading-font: "Playfair Display", serif;
+   --body-font: "Work Sans", sans-serif;
+
+   ::selection {
+      background-color: var(--black-color);
+      color: var(--white-color);
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: var(--white-color);
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: var(--body-font);
+   scroll-behavior: smooth;
+}
+
+/* Header Section */
+
+#header {
+   height: 100dvh;
+   width: 100dvw;
+   position: relative;
+   overflow: hidden;
+
+}
+
+/* Navbar CSS */
+
+#nav {
+   width: 100dvw;
+   padding: 4dvh 2dvw 2dvh 2dvw;
+   color: var(--white-color);
+   top: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+   z-index: 100;
+}
+
+#nav nav {
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+}
+
+#nav nav #navLogo img {
+   height: 40px;
+}
+
+#nav nav #navPages,
+#navAuth {
+   font-family: var(--body-font);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5dvh;
+   font-size: 1rem;
+}
+
+#nav nav #navPages a,
+#navAuth a {
+   all: unset;
+   cursor: pointer;
+   font-weight: 500;
+   opacity: 80%;
+}
+
+#nav nav #navPages a:hover,
+#navAuth a:hover {
+   opacity: 100%;
+   font-weight: 600;
+   font-size: 1.2rem;
+   transition: 0.5s;
+}
+
+#nav nav #navBurger {
+   display: none;
+}
+
+/* Home Section CSS */
+
+#Home {
+   overflow: hidden;
+   height: 100dvh;
+   width: 100dvw;
+   color: var(--white-color);
+   background-image: url("../../Assets/User Side/Images/Home-bg.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#Home #homeBox {
+   height: 100dvh;
+   width: 100dvw;
+   position: absolute;
+   opacity: 50%;
+   z-index: 0;
+   background-color: #212121;
+}
+
+#Home #homeContent {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+   text-align: center;
+}
+
+#Home #homeContent #homeTagline {
+   font-size: 4rem;
+   font-weight: 700;
+   font-family: var(--heading-font);
+}
+
+#Home #homeContent #homeLorem {
+   font-size: 0.85rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+}
+
+/* About Section */
+
+#About {
+   overflow: hidden;
+   height: 60dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--white-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8dvh;
+   flex-direction: row;
+   flex-wrap: wrap
+}
+
+#About #aboutLeft {
+   overflow: hidden;
+   height: 100%;
+   width: 50%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+#About #aboutLeft img {
+   width: auto;
+   height: 100%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   object-fit: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   margin: 1dvh 1dvh;
+}
+
+#About #aboutRight {
+   overflow: hidden;
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 6dvh;
+}
+
+#About #aboutRight #aboutTitle {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: start;
+   gap: 1dvh;
+   font-family: var(--heading-font);
+   font-size: 2.5rem;
+}
+
+#About #aboutRight hr {
+   all: unset;
+   width: 10%;
+   height: 1px;
+   background-color: var(--black-color);
+   border-radius: 1000px;
+}
+
+#About #aboutRight #aboutContent {
+   width: 60%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: start;
+   gap: 2dvh;
+   font-family: var(--body-font);
+   font-size: 1rem;
+   line-height: 1.8;
+}
+
+#About #aboutRight #aboutContent div {
+   opacity: 80%;
+}
+
+#About #aboutRight #aboutContent>a {
+   all: unset;
+}
+
+#About #aboutRight #aboutContent span {
+   display: flex;
+   gap: 1dvh;
+   justify-content: start;
+   align-items: center;
+   font-size: 1rem;
+   font-style: var(--primary-color);
+   text-transform: uppercase;
+   color: var(--primary-color);
+   font-weight: 500;
+   cursor: pointer;
+}
+
+/* Features section */
+
+#Features {
+   overflow: hidden;
+   height: 80dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--white-color);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 6dvh;
+}
+
+#Features #featuresTitle {
+   width: 80%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1dvh;
+   font-family: var(--heading-font);
+   font-size: 2.5rem;
+}
+
+#Features #featuresTitle hr {
+   all: unset;
+   width: 6%;
+   height: 1px;
+   background-color: var(--black-color);
+   border-radius: 1000px;
+}
+
+#Features #featuresGrid {
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#Features #featuresGrid .featuresCard {
+   width: 26%;
+   height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 3dvh;
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+#Features #featuresGrid .featuresCard .featuresImage svg {
+   width: 36px;
+   height: 36px;
+}
+
+/* Stats section */
+
+#Stats {
+   overflow: hidden;
+   height: 15dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20dvw;
+   background-color: var(--lightGrey-color);
+}
+
+#Stats .statsBox {
+   width: 25%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1dvh;
+}
+
+#Stats .statsBox .statsNumber {
+   font-size: 2.25rem;
+   font-weight: 700;
+}
+
+#Stats .statsBox .statsTitle {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+/* Gallery section */
+
+#Gallery {
+   overflow: hidden;
+   height: 80dvh;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--white-color);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 6dvh;
+}
+
+#Gallery #galleryTitle {
+   width: 80%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1dvh;
+   font-family: var(--heading-font);
+   font-size: 2.5rem;
+   position: relative;
+
+}
+
+#Gallery #galleryTitle hr {
+   all: unset;
+   width: 6%;
+   height: 1px;
+   background-color: var(--black-color);
+   border-radius: 1000px;
+}
+
+#Gallery #galleryGrid {
+   width: 65%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+}
+
+#Gallery #galleryGrid .gridImages {
+   width: 25%;
+   height: 22vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#Gallery #galleryGrid .gridImages img {
+   height: 100%;
+   width: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+#Footer {
+   overflow: hidden;
+   height: fit-content;
+   width: 100dvw;
+   color: var(--lightGrey-color);
+   background-color: #333333;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 12dvh 8dvw;
+}
+
+#Copyright {
+   height: fit-content;
+   width: 100dvw;
+   color: var(--lightGrey-color);
+   background-color: #333333;
+   padding: 2dvh 0;
+   margin: auto;
+   font-size: 1.1rem;
+}
+
+#Copyright .center {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#Copyright .center a {
+   all: unset;
+   cursor: pointer;
+}
+
+#Footer .footerContent {
+   overflow: hidden;
+   height: fit-content;
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+}
+
+#Footer .footerContent .footerHeading {
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: var(--white-color);
+}
+
+#Footer .footerContent .footerLorem .footerLinks,
+#Footer .footerContent .footerLorem .footerLinks a,
+#Footer .footerContent .footerLorem {
+   all: unset;
+   color: var(--lightGrey-color);
+   opacity: 80%;
+   width: 80%;
+   font-size: 1rem;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1dvh;
+   cursor: pointer;
+
+   &:hover {
+      opacity: 100%;
+      color: var(--white-color);
+      font-size: 1.05rem;
+      transition: 0.5s;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   #nav {
+      width: 100dvw;
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      width: 90%;
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 40px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: none;
+   }
+
+   #nav nav #navBurger {
+      display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 600;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.6rem;
+      letter-spacing: 0.1rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 100%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 20%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 45%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 28px;
+      height: 28px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 30dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 40%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 90%;
+      gap: 1dvw;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 100%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      width: 90%;
+      height: 40px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: none;
+   }
+
+   #nav nav #navBurger {
+      display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.7rem;
+      letter-spacing: 0.15rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 90%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 20%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 45%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 28px;
+      height: 28px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 30dvh;
+      padding: 0 20dvw;
+   }
+
+   #Stats .statsBox {
+      width: 40%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 15%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 90%;
+      gap: 1dvw;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 100%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      display: flex;
+      width: 90%;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 40px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: none;
+   }
+
+   #nav nav #navBurger {
+      display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.75rem;
+      letter-spacing: 0.18rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 45%;
+      width: 90%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 60%;
+      width: 90%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 20%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 3dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent div {
+      opacity: 80%;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 45%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 28px;
+      height: 28px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 80%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 80%;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 50%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      width: 80%;
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 45px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: none;
+   }
+
+   #nav nav #navBurger {
+      display: inline-block;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 3.5rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
+#About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 2dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 45%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 45%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2dvh;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 30%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 28px;
+      height: 28px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.6rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: .9rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 80%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 80%;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 50%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+   
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      width: 90%;
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 50px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: flex;
+   }
+
+   #nav nav #navBurger {
+      display: none;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 80%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 0.9rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 30%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 32px;
+      height: 32px;
+   }
+
+   /* Stats section */
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 1.8rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 80%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 80%;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 25%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 23%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      width: 90%;
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 50px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: flex;
+   }
+
+   #nav nav #navBurger {
+      display: none;
+   }
+
+   /* Home Section CSS */
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 70%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 30%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1.2rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 34px;
+      height: 34px;
+   }
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 80%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 80%;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 25%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 23%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+}
+
+@media (min-width: 1601px) {
+   #nav {
+      padding: 4dvh 2dvw 2dvh 2dvw;
+   }
+
+   #nav nav {
+      width: 90%;
+      display: flex;
+      gap: 2dvh;
+   }
+
+   #nav nav #navLogo img {
+      height: 50px;
+   }
+
+   #nav nav #navPages,
+   #navAuth {
+      display: flex;
+   }
+
+   #nav nav #navBurger {
+      display: none;
+   }
+
+   #Home #homeContent {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+   }
+
+   #Home #homeContent #homeTagline {
+      font-size: 4rem;
+      font-weight: 700;
+   }
+
+   #Home #homeContent #homeLorem {
+      font-size: 0.875rem;
+      letter-spacing: 0.2rem;
+   }
+
+   #About {
+      height: fit-content;
+      padding: 4dvh 2dvh;
+      gap: 4dvh;
+   }
+
+   #About #aboutLeft {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+   }
+
+   #About #aboutLeft img {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      object-fit: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 1dvh 1dvh;
+   }
+
+   #About #aboutRight {
+      overflow: hidden;
+      height: 50%;
+      width: 42%;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   #About #aboutRight #aboutTitle {
+      width: 100%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #About #aboutRight hr {
+      all: unset;
+      width: 10%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #About #aboutRight #aboutContent {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-items: start;
+      gap: 2dvh;
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   #About #aboutRight #aboutContent span {
+      display: flex;
+      gap: 1dvh;
+      justify-content: start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   #Features {
+      overflow: hidden;
+      height: 80dvh;
+      width: 100dvw;
+   }
+
+   #Features #featuresTitle {
+      width: 90%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Features #featuresTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Features #featuresGrid {
+      width: 90%;
+   }
+
+   #Features #featuresGrid .featuresCard {
+      width: 30%;
+      height: 20vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2dvh;
+      font-size: 1.3rem;
+      text-align: center;
+   }
+
+   #Features #featuresGrid .featuresCard .featuresImage svg {
+      width: 36px;
+      height: 36px;
+   }
+
+   #Stats {
+      height: 15dvh;
+      padding: 0 10dvw;
+   }
+
+   #Stats .statsBox {
+      width: 25%;
+      gap: 1dvh;
+   }
+
+   #Stats .statsBox .statsNumber {
+      font-size: 2.2rem;
+      font-weight: 700;
+   }
+
+   #Stats .statsBox .statsTitle {
+      font-size: 1rem;
+      font-weight: 400;
+   }
+
+   #Gallery {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      padding: 10dvh 0;
+   }
+
+   #Gallery #galleryTitle {
+      width: 80%;
+      gap: 1dvh;
+      font-size: 2.5rem;
+   }
+
+   #Gallery #galleryTitle hr {
+      all: unset;
+      width: 6%;
+      height: 1px;
+      background-color: var(--black-color);
+      border-radius: 1000px;
+   }
+
+   #Gallery #galleryGrid {
+      width: 80%;
+   }
+
+   #Gallery #galleryGrid .gridImages {
+      width: 25%;
+      height: auto;
+   }
+
+   #Gallery #galleryGrid .gridImages img {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 23%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+
+}
