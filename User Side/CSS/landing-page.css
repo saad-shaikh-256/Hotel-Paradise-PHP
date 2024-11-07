@@ -3581,37 +3581,37 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
-       #Footer {
-          flex-direction: row;
-          flex-wrap: wrap;
-          padding: 12dvh 8dvw;
-       }
-   
-       #Copyright {
-          width: 100dvw;
-          font-size: 1rem;
-       }
-   
-       #Footer .footerContent {
-          width: 25%;
-          gap: 2dvh;
-       }
-   
-       #Footer .footerContent .footerHeading {
-          font-size: 1.2rem;
-       }
-   
-       #Footer .footerContent .footerLorem .footerLinks,
-       #Footer .footerContent .footerLorem .footerLinks a,
-       #Footer .footerContent .footerLorem {
-          width: 100%;
-          font-size: .9rem;
-          gap: 1dvh;
-   
-          &:hover {
-             font-size: .9rem;
-          }
-       }
 
-       
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 25%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
+
 }
