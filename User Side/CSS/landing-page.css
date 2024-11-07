@@ -742,6 +742,28 @@ body {
    padding: 12dvh 8dvw;
 }
 
+#Copyright {
+   height: fit-content;
+   width: 100dvw;
+   color: var(--lightGrey-color);
+   background-color: #333333;
+   padding: 2dvh 0;
+   margin: auto;
+   font-size: 1.1rem;
+}
+
+#Copyright .center {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#Copyright .center a {
+   all: unset;
+   cursor: pointer;
+}
+
 #Footer .footerContent {
    overflow: hidden;
    height: fit-content;
@@ -772,12 +794,12 @@ body {
    gap: 1dvh;
    cursor: pointer;
 
-   &:hover{
+   &:hover {
       opacity: 100%;
       color: var(--white-color);
       font-size: 1.05rem;
       transition: 0.5s;
-}
+   }
 }
 
 @media only screen and (max-width: 480px) {
@@ -919,7 +941,6 @@ body {
    #About #aboutRight #aboutContent div {
       opacity: 80%;
    }
-
 
    #About #aboutRight #aboutContent span {
       display: flex;
@@ -1155,6 +1176,39 @@ body {
       font-size: 0.9rem;
       opacity: 80%;
       color: var(--primary-color);
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
    }
 }
 
@@ -1533,6 +1587,39 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -1683,8 +1770,6 @@ body {
       font-size: 1rem;
       font-weight: 500;
    }
-
-
 
    #Features {
       overflow: hidden;
@@ -1910,6 +1995,39 @@ body {
       font-size: 0.9rem;
       opacity: 80%;
       color: var(--primary-color);
+   }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
    }
 }
 
@@ -2282,6 +2400,39 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+      gap: 2dvh;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: .9rem;
+   }
+
+   #Footer .footerContent {
+      width: 45%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -2648,6 +2799,38 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 24%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
@@ -3008,6 +3191,38 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
+
+   #Footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12dvh 8dvw;
+   }
+
+   #Copyright {
+      width: 100dvw;
+      font-size: 1rem;
+   }
+
+   #Footer .footerContent {
+      width: 25%;
+      gap: 2dvh;
+   }
+
+   #Footer .footerContent .footerHeading {
+      font-size: 1.2rem;
+   }
+
+   #Footer .footerContent .footerLorem .footerLinks,
+   #Footer .footerContent .footerLorem .footerLinks a,
+   #Footer .footerContent .footerLorem {
+      width: 100%;
+      font-size: .9rem;
+      gap: 1dvh;
+
+      &:hover {
+         font-size: .9rem;
+      }
+   }
 }
 
 @media (min-width: 1601px) {
@@ -3366,4 +3581,37 @@ body {
       opacity: 80%;
       color: var(--primary-color);
    }
+       #Footer {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 12dvh 8dvw;
+       }
+   
+       #Copyright {
+          width: 100dvw;
+          font-size: 1rem;
+       }
+   
+       #Footer .footerContent {
+          width: 25%;
+          gap: 2dvh;
+       }
+   
+       #Footer .footerContent .footerHeading {
+          font-size: 1.2rem;
+       }
+   
+       #Footer .footerContent .footerLorem .footerLinks,
+       #Footer .footerContent .footerLorem .footerLinks a,
+       #Footer .footerContent .footerLorem {
+          width: 100%;
+          font-size: .9rem;
+          gap: 1dvh;
+   
+          &:hover {
+             font-size: .9rem;
+          }
+       }
+
+       
 }

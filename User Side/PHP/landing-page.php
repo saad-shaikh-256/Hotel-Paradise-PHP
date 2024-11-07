@@ -327,38 +327,49 @@
 
             <div class="footerLinks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</div>
          </div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Quick Menu</div>
+         <div class="footerLorem">
+            <div class="footerLinks"><a href="#Home">Home</a></div>
+            <div class="footerLinks"><a href="about-page.php">About</a></div>
+            <div class="footerLinks"><a href="rooms-page.php">Rooms</a></div>
+            <div class="footerLinks"><a href="event-page.php">Event</a></div>
+            <div class="footerLinks"><a href="contact-page.php">Contact</a></div>
          </div>
-         <div class="footerContent">
-            <div class="footerHeading">Quick Menu</div>
-            <div class="footerLorem">
-               <div class="footerLinks"><a href="#Home">Home</a></div>
-               <div class="footerLinks"><a href="about-page.php">About</a></div>
-               <div class="footerLinks"><a href="rooms-page.php">Rooms</a></div>
-               <div class="footerLinks"><a href="event-page.php">Event</a></div>
-               <div class="footerLinks"><a href="contact-page.php">Contact</a></div>
-            </div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Lorem ipsum</div>
+         <div class="footerLorem">
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
          </div>
-         <div class="footerContent">
-            <div class="footerHeading">Lorem ipsum</div>
-            <div class="footerLorem">
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-            </div>
+      </div>
+      <div class="footerContent">
+         <div class="footerHeading">Lorem ipsum</div>
+         <div class="footerLorem">
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
+            <div class="footerLinks">lorem</div>
          </div>
-         <div class="footerContent">
-            <div class="footerHeading">Lorem ipsum</div>
-            <div class="footerLorem">
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-               <div class="footerLinks">lorem</div>
-            </div>
-         </div>
+      </div>
    </section>
+
+   <section id="Copyright">
+      <span class="center">
+         Copyright &copy; <span id="year"></span> <a href="https://github.com/saad-shaikh-256" target="_blank"> &nbsp;@Saad Shaikh</a>
+      </span>
+   </section>
+  
+
    
-   
+   <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+   </script>
+
    <script src="../JS/landing-page.js"></script>
 </body>
 
