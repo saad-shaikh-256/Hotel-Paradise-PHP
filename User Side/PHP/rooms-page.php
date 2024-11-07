@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Hotel Paradise - by shaikhsaad256@gmail.com</title>
+   <title>Rooms Page - Hotel Paradise - by shaikhsaad256@gmail.com</title>
 
    <link rel="shortcut icon" href="../../Assets/Common/Vectors/Logo.svg" type="image/x-icon">
    <link rel="stylesheet" href="../CSS/rooms-page.css">

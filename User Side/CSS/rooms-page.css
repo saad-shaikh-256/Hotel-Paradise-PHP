@@ -365,12 +365,27 @@ body {
    align-items: center;
    border: 1px solid rgb(195, 195, 195);
    border-radius: 9999px;
+   cursor: pointer;
+
+   &:hover {
+      color: var(--white-color);
+      background-color: var(--primary-color);
+      border: none;
+      transition: 0.5s;
+   }
 }
 
 #Pages .pageNumber:nth-child(2) {
    color: var(--white-color);
    background-color: var(--primary-color);
    border: none;
+
+   &:hover {
+         color: var(--primary-color);
+      background-color: var(--lightGrey-color);
+      border: 1px solid rgb(195, 195, 195);
+      transition: 0.5s;
+   }
 }
 
 @media only screen and (max-width: 480px) {
