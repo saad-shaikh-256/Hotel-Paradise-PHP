@@ -160,6 +160,127 @@ body {
    letter-spacing: 0.2rem;
 }
 
+#Contact {
+   overflow: hidden;
+   height: fit-content;
+   width: 100dvw;
+   color: var(--black-color);
+   background-color: var(--white-color);
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 12dvh 8dvw;
+}
+
+#Contact #contactRight {
+   height: 100%;
+   width: 60%;
+   padding: 2dvh 2dvw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 2dvh;
+}
+
+#Contact #contactRight form {
+   height: fit-content;
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+}
+
+#Contact #contactRight form div {
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1dvh;
+}
+
+#Contact #contactRight form div label {
+   font-size: 1.1rem;
+   opacity: 80%;
+   font-weight: 600;
+}
+
+#Contact #contactRight form div input,
+#Contact #contactRight form div textarea {
+   all: unset;
+   border: 1px solid #d5d5d5;
+   border-radius: 4px;
+   padding: 1.25dvh 2dvh;
+
+   &:focus {
+      border: 1px solid #ff0000;
+      transition: .5s;
+   }
+}
+
+#Contact #contactRight form button {
+   all: unset;
+   border-radius: 4px;
+   padding: 1.25dvh 2dvh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1rem;
+   color: var(--white-color);
+   cursor: pointer;
+   font-weight: 600;
+   background-color: var(--primary-color);
+
+   &:hover {
+      background-color: #d54339;
+      transition: .5s;
+   }
+}
+
+#Contact #contactLeft {
+   height: 100%;
+   width: 40%;
+   padding: 2dvh 2dvw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 3dvh;
+}
+
+#Contact #contactLeft #contactHeading {
+   font-size: 1.25rem;
+}
+
+#Contact #contactLeft #contactAddress,
+#Contact #contactLeft #contactPhone,
+#Contact #contactLeft #contactEmail {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1dvh;
+   width: 80%;
+}
+
+#Contact #contactLeft #contactAddress #addressHeading,
+#Contact #contactLeft #contactPhone #phoneHeading,
+#Contact #contactLeft #contactEmail #emailHeading {
+   font-size: 1.1rem;
+   font-weight: 600;
+   opacity: 80%;
+}
+
+#Contact #contactLeft #contactAddress #addressLorem,
+#Contact #contactLeft #contactPhone #phoneLorem,
+#Contact #contactLeft #contactEmail #emailLorem {
+   width: 80%;
+   font-size: 1rem;
+   color: var(--primary-color);
+}
+
 #Footer {
    overflow: hidden;
    height: fit-content;

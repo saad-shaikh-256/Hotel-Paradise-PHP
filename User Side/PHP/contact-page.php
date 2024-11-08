@@ -7,7 +7,7 @@
    <title>Contact Page - Hotel Paradise - by shaikhsaad256@gmail.com</title>
 
    <link rel="shortcut icon" href="../../Assets/Common/Vectors/Logo.svg" type="image/x-icon">
-   <link rel="stylesheet" href="../CSS/landing-page.css">
+   <link rel="stylesheet" href="../CSS/contact-page.css">
 
 </head>
 
@@ -49,6 +49,51 @@
             <div id="homeTagline">Get In Touch</div>
          </div>
       </section>
+   </section>
+
+   <section id="Contact">
+
+      <div id="contactRight">
+         <form action="">
+            <div>
+               <label for="name">Full Name</label>
+               <input type="text" id="name" name="name" required placeholder="Full Name" value="Saad Shaikh">
+            </div>
+            <div>
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" required placeholder="Email Address" value="shaikhsaad256@gmail.com">
+            </div>
+            <div>
+               <label for="phone">Phone</label>
+               <input type="tel" id="phone" name="phone" required placeholder="Phone Number" value="8200060000">
+            </div>
+            <div>
+               <label for="message">Message</label>
+               <textarea name="message" id="message" placeholder="Say hello to us">Hello Admin</textarea>
+            </div>
+            <button type="submit">Send Message</button>
+         </form>
+      </div>
+
+      <div id="contactLeft">
+         <div id="contactHeading">Contact Info</div>
+
+         <div id="contactAddress">
+            <div id="addressHeading">Address</div>
+            <div id="addressLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, amet?</div>
+         </div>
+
+         <div id="contactPhone">
+            <div id="phoneHeading">Phone</div>
+            <div id="phoneLorem">+91 82000 60000</div>
+         </div>
+
+         <div id="contactEmail">
+            <div id="emailHeading">Email Address</div>
+            <div id="emailLorem">shaikhsaad256@gmail.com</div>
+         </div>
+
+      </div>
    </section>
 
    <section id="Footer">
@@ -99,7 +144,7 @@
       document.getElementById('year').textContent = new Date().getFullYear();
    </script>
 
-   <script src="../JS/landing-page.js"></script>
+   <script src="../JS/contact-page.js"></script>
 </body>
 
 </html>
