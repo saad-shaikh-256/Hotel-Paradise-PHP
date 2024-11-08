@@ -193,8 +193,8 @@
       <div class="footerContent">
          <div class="footerHeading">Quick Menu</div>
          <div class="footerLorem">
-            <div class="footerLinks"><a href="#Home">Home</a></div>
-            <div class="footerLinks"><a href="about-page.php">About</a></div>
+            <div class="footerLinks"><a href="landing-page.php">Home</a></div>
+            <div class="footerLinks"><a href="#About">About</a></div>
             <div class="footerLinks"><a href="rooms-page.php">Rooms</a></div>
             <div class="footerLinks"><a href="event-page.php">Event</a></div>
             <div class="footerLinks"><a href="contact-page.php">Contact</a></div>
