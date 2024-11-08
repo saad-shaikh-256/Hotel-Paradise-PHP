@@ -14,12 +14,12 @@
 <body>
 
    <main>
-      <div class="logo"><img src="../../Assets/Common/Vectors/Logo.svg" alt="logo"></div>
+      
       <div id="heading">
          <div id="mainHeading">Login</div>
          <div id="subHeading">Login into your account</div>
       </div>
-      
+
       <form action="">
 
          <div>
