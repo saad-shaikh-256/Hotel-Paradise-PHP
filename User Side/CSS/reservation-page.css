@@ -48,65 +48,6 @@ body {
 
 }
 
-/* Navbar CSS */
-
-#nav {
-   width: 100dvw;
-   padding: 4dvh 2dvw 2dvh 2dvw;
-   color: var(--black-color);
-   top: 0;
-   left: 0;
-   right: 0;
-   position: absolute;
-   z-index: 100;
-}
-
-#nav nav {
-   width: 80%;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   margin: auto;
-}
-
-#nav nav #navLogo img {
-   height: 40px;
-}
-
-#nav nav #navPages,
-#navAuth {
-   font-family: var(--body-font);
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 1.5dvh;
-   font-size: 1rem;
-}
-
-#nav nav #navPages a,
-#navAuth a {
-   all: unset;
-   cursor: pointer;
-   font-weight: 500;
-   opacity: 80%;
-}
-
-#nav nav #navPages a:hover,
-#navAuth a:hover {
-   opacity: 100%;
-   font-weight: 600;
-   font-size: 1.2rem;
-   transition: 0.5s;
-}
-
-#nav nav #navBurger {
-   display: none;
-}
-
 /* Home Section CSS */
 
 #Home {
@@ -120,8 +61,131 @@ body {
    background-size: cover;
    position: relative;
    display: flex;
+   padding: 4dvh 8dvw;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1dvh;
+}
+
+#Home #backBTN {
+   all: unset;
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 1dvh;
+   align-items: center;
+   padding: 1rem 0;
+   cursor: pointer;
+   font-weight: 500;
+}
+
+#Home #backBTN svg {
+   rotate: 180deg;
+}
+
+#Home #homeHeading {
+   all: unset;
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 1dvh;
+   align-items: center;
+   padding: 1rem 0;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 2.5rem;
+}
+
+#Home #imageAndBooking {
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#Home #imageAndBooking #image {
+   height: 100%;
+   width: 60%;
+   background-image: url("../../Assets/User Side/Images/roomImg-4.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+      border-radius: 4px;
+}
+
+#Home #imageAndBooking #booking {
+   height: fit-content;
+   width: 38%;
+   padding: 2dvh;
+   background-color: var(--lightGrey-color);
+      border-radius: 4px;
+}
+
+#Home #imageAndBooking #booking form,
+#Home #imageAndBooking #booking form .Inputs {
+   height: fit-content;
+   width: 100%;
+   padding: 2dvh;
+   background-color: var(--white-color);
+      border-radius: 4px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+}
+
+#Home #imageAndBooking #booking form .Inputs div {
+   display: flex;
+   flex-direction: column;
+   gap: 1.2dvh;
+}
+
+#Home #imageAndBooking #booking form .Inputs div label {
+   font-size: 1.1rem;
+   font-weight: 500;
+   opacity: 90%;
+}
+
+#Home #imageAndBooking #booking form .Inputs div input,
+#Home #imageAndBooking #booking form .Inputs div select {
+   width: 100%;
+   all: unset;
+   border-bottom: 1px solid #d9d9d9;
+   padding: 0rem .5rem .5rem .5rem;
+
+   &:focus {
+      border-bottom: 1px solid var(--primary-color);
+      transition: .5s;
+   }
+}
+
+#pricing {
+   font-size: 1.05rem;
+   font-weight: 500;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 2dvh;
+}
+
+button {
+   all: unset;
+   font-size: 1.05rem;
+   font-weight: 600;
+   display: flex;
    justify-content: center;
    align-items: center;
+   padding: 1dvh 2dvh;
+   color: var(--white-color);
+   border-radius: 4px;
+   background-color: var(--primary-color);
+   cursor: pointer;
 }
 
 #Footer {
@@ -199,29 +263,6 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-   #nav {
-      width: 100dvw;
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      width: 90%;
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 40px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: none;
-   }
-
-   #nav nav #navBurger {
-      display: inline-block;
-   }
 
    #Footer {
       flex-direction: row;
@@ -258,28 +299,6 @@ body {
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      width: 90%;
-      height: 40px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: none;
-   }
-
-   #nav nav #navBurger {
-      display: inline-block;
-   }
 
    #Footer {
       flex-direction: row;
@@ -316,28 +335,6 @@ body {
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      display: flex;
-      width: 90%;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 40px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: none;
-   }
-
-   #nav nav #navBurger {
-      display: inline-block;
-   }
 
    #Footer {
       flex-direction: row;
@@ -374,86 +371,6 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      width: 80%;
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 45px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: none;
-   }
-
-   #nav nav #navBurger {
-      display: inline-block;
-   }
-
-   #Footer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 12dvh 8dvw;
-      gap: 2dvh;
-   }
-
-   #Copyright {
-      width: 100dvw;
-      font-size: .9rem;
-   }
-
-   #Footer .footerContent {
-      width: 45%;
-      gap: 2dvh;
-   }
-
-   #Footer .footerContent .footerHeading {
-      font-size: 1.2rem;
-   }
-
-   #Footer .footerContent .footerLorem .footerLinks,
-   #Footer .footerContent .footerLorem .footerLinks a,
-   #Footer .footerContent .footerLorem {
-      width: 100%;
-      font-size: .9rem;
-      gap: 1dvh;
-
-      &:hover {
-         font-size: .9rem;
-      }
-   }
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      width: 90%;
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 50px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: flex;
-   }
-
-   #nav nav #navBurger {
-      display: none;
-   }
 
    #Footer {
       flex-direction: row;
@@ -489,28 +406,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      width: 90%;
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 50px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: flex;
-   }
-
-   #nav nav #navBurger {
-      display: none;
-   }
 
    #Footer {
       flex-direction: row;
@@ -546,28 +441,6 @@ body {
 }
 
 @media (min-width: 1601px) {
-   #nav {
-      padding: 4dvh 2dvw 2dvh 2dvw;
-   }
-
-   #nav nav {
-      width: 90%;
-      display: flex;
-      gap: 2dvh;
-   }
-
-   #nav nav #navLogo img {
-      height: 50px;
-   }
-
-   #nav nav #navPages,
-   #navAuth {
-      display: flex;
-   }
-
-   #nav nav #navBurger {
-      display: none;
-   }
 
    #Footer {
       flex-direction: row;

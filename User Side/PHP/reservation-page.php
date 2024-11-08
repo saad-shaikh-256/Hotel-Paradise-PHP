@@ -14,43 +14,16 @@
 <body>
 
    <section id="header">
-      <section id="nav">
-         <nav>
-
-            <div id="navLogo">
-               <img src="../../Assets/Common/Vectors/Logo.svg" alt="">
-            </div>
-
-            <div id="navPages">
-               <a href="landing-page.php">Home</a>
-               <a href="rooms-page.php">Rooms</a>
-               <a href="events-page.php">Events</a>
-               <a href="about-page.php">About</a>
-               <a href="contact-page.php">Contact</a>
-            </div>
-
-            <div id="navAuth">
-               <a href="../../Login Signup/PHP/login-page.php">Login</a>
-               <a href="../../Login Signup/PHP/signup-page.php">Sign-up</a>
-               <a href="../../Login Signup/PHP/logout-page.php">Logout</a>
-            </div>
-
-            <div id="navBurger">
-               <img src="../../Assets/User Side/Vectors/navBurger.svg" alt="">
-            </div>
-
-         </nav>
-      </section>
 
       <section id="Home">
 
-         <div id="backBTN">
+         <a id="backBTN" href="rooms-page.php">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#111111" fill="none">
                <path d="M20.0001 11.9998L4.00012 11.9998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             Back
-         </div>
+         </a>
 
          <div id="homeHeading">
             Deluxe Room
@@ -59,7 +32,6 @@
          <div id="imageAndBooking">
 
             <div id="image"></div>
-
             <div id="booking">
 
                <form action="">
@@ -118,10 +90,6 @@
 
          </div>
 
-         <div id="aboutRoom">
-            <div id="aboutHeading">About Room</div>
-            <div id="aboutLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sed commodi nobis libero illum labore id error autem fugiat quisquam asperiores, sunt quis odio, perferendis laboriosam culpa facere amet totam corrupti maxime temporibus numquam obcaecati? Corrupti suscipit natus consequuntur quam? Voluptatem, alias veniam in obcaecati dolore mollitia dignissimos nisi a?</div>
-         </div>
       </section>
    </section>
 
