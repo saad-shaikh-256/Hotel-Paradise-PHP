@@ -277,7 +277,7 @@ body {
 #Contact #contactLeft #contactPhone #phoneLorem,
 #Contact #contactLeft #contactEmail #emailLorem {
    width: 80%;
-   font-size: 1rem;
+   font-size: 1.1rem;
    color: var(--primary-color);
 }
 
@@ -398,6 +398,77 @@ body {
       letter-spacing: 0.1rem;
    }
 
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
+   }
+
    #Footer {
       flex-direction: row;
       flex-wrap: wrap;
@@ -472,6 +543,77 @@ body {
    #Home #homeContent #homeLorem {
       font-size: 0.7rem;
       letter-spacing: 0.15rem;
+   }
+
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
    }
 
    #Footer {
@@ -550,6 +692,77 @@ body {
       letter-spacing: 0.18rem;
    }
 
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 100%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.8dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 100%;
+      gap: 4dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
+   }
+
    #Footer {
       flex-direction: row;
       flex-wrap: wrap;
@@ -624,6 +837,76 @@ body {
    #Home #homeContent #homeLorem {
       font-size: 0.875rem;
       letter-spacing: 0.2rem;
+   }
+
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 60%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 90%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 40%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
    }
 
    #Footer {
@@ -702,6 +985,76 @@ body {
       letter-spacing: 0.2rem;
    }
 
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 60%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 90%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 40%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
+   }
+
    #Footer {
       flex-direction: row;
       flex-wrap: wrap;
@@ -777,6 +1130,76 @@ body {
       letter-spacing: 0.2rem;
    }
 
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 60%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 70%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 30%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
+   }
+
    #Footer {
       flex-direction: row;
       flex-wrap: wrap;
@@ -848,6 +1271,76 @@ body {
    #Home #homeContent #homeLorem {
       font-size: 0.875rem;
       letter-spacing: 0.2rem;
+   }
+
+   #Contact {
+      overflow: hidden;
+      height: fit-content;
+      width: 100dvw;
+      color: var(--black-color);
+      background-color: var(--white-color);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 12dvh 4dvw;
+   }
+
+   #Contact #contactRight {
+      height: 100%;
+      width: 60%;
+   }
+
+   #Contact #contactRight form {
+      height: fit-content;
+      width: 70%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div {
+      width: 100%;
+      gap: 2dvh;
+   }
+
+   #Contact #contactRight form div input,
+   #Contact #contactRight form div textarea {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactRight form button {
+      padding: 1.5dvh 2dvh;
+   }
+
+   #Contact #contactLeft {
+      height: 100%;
+      width: 30%;
+      gap: 3dvh;
+   }
+
+   #Contact #contactLeft #contactHeading {
+      font-size: 1.25rem;
+   }
+
+   #Contact #contactLeft #contactAddress,
+   #Contact #contactLeft #contactPhone,
+   #Contact #contactLeft #contactEmail {
+      gap: 2dvh;
+      width: 100%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressHeading,
+   #Contact #contactLeft #contactPhone #phoneHeading,
+   #Contact #contactLeft #contactEmail #emailHeading {
+      font-size: 1.1rem;
+      opacity: 80%;
+   }
+
+   #Contact #contactLeft #contactAddress #addressLorem,
+   #Contact #contactLeft #contactPhone #phoneLorem,
+   #Contact #contactLeft #contactEmail #emailLorem {
+      width: 100%;
+      font-size: 1rem;
    }
 
    #Footer {
