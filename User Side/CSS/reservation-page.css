@@ -106,7 +106,6 @@ body {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   align-items: center;
    justify-content: space-between;
 }
 
@@ -686,8 +685,8 @@ button {
    }
 
    #Home #imageAndBooking #image {
-      height: 70dvh; 
-      width:48%;
+      height: 70dvh;
+      width: 48%;
    }
 
    #Home #imageAndBooking #booking {
@@ -723,6 +722,68 @@ button {
 
 @media (min-width: 1201px) and (max-width: 1600px) {
 
+   #header {
+      height: fit-content;
+   }
+
+   /* Home Section CSS */
+
+   #Home {
+      height: fit-content;
+   }
+
+   #Home #backBTN {
+      width: 100%;
+   }
+
+   #Home #homeHeading {
+      width: 100%;
+      padding: 0rem 0;
+      font-weight: 600;
+      font-size: 1.5rem;
+   }
+
+   #Home #imageAndBooking {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2dvh 0;
+   }
+
+   #Home #imageAndBooking #image {
+      height: 70dvh;
+      width: 58%;
+   }
+
+   #Home #imageAndBooking #booking {
+      height: fit-content;
+      width: 38%;
+      padding: 1.5dvh;
+   }
+
+   #Home #imageAndBooking #booking form,
+   #Home #imageAndBooking #booking form .Inputs {
+      height: fit-content;
+      width: 100%;
+      padding: 1dvh;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div {
+      gap: 1.5dvh;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div label {
+      font-size: 1rem;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div input,
+   #Home #imageAndBooking #booking form .Inputs div select {
+      width: 100%;
+      all: unset;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 0rem .5rem .5rem .5rem;
+   }
+
    #Footer {
       flex-direction: row;
       flex-wrap: wrap;
@@ -757,6 +818,67 @@ button {
 }
 
 @media (min-width: 1601px) {
+   #header {
+      height: fit-content;
+   }
+
+   /* Home Section CSS */
+
+   #Home {
+      height: fit-content;
+   }
+
+   #Home #backBTN {
+      width: 100%;
+   }
+
+   #Home #homeHeading {
+      width: 100%;
+      padding: 0rem 0;
+      font-weight: 600;
+      font-size: 1.5rem;
+   }
+
+   #Home #imageAndBooking {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2dvh 0;
+   }
+
+   #Home #imageAndBooking #image {
+      height: 70dvh;
+      width: 58%;
+   }
+
+   #Home #imageAndBooking #booking {
+      height: fit-content;
+      width: 38%;
+      padding: 1.5dvh;
+   }
+
+   #Home #imageAndBooking #booking form,
+   #Home #imageAndBooking #booking form .Inputs {
+      height: fit-content;
+      width: 100%;
+      padding: 1dvh;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div {
+      gap: 1.5dvh;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div label {
+      font-size: 1rem;
+   }
+
+   #Home #imageAndBooking #booking form .Inputs div input,
+   #Home #imageAndBooking #booking form .Inputs div select {
+      width: 100%;
+      all: unset;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 0rem .5rem .5rem .5rem;
+   }
 
    #Footer {
       flex-direction: row;
