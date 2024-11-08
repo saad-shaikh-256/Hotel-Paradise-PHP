@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +30,9 @@
             </div>
 
             <div id="navAuth">
-               <a href="../../login-page.php">Login</a>
-               <a href="../../signup-page.php">Sign-up</a>
-               <a href="../../logout-page.php">Logout</a>
+               <a href="../../Login Signup/PHP/login-page.php">Login</a>
+               <a href="../../Login Signup/PHP/signup-page.php">Sign-up</a>
+               <a href="../../Login Signup/PHP/logout-page.php">Logout</a>
             </div>
 
             <div id="navBurger">

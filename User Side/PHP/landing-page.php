@@ -30,9 +30,9 @@
             </div>
 
             <div id="navAuth">
-               <a href="../../login-page.php">Login</a>
-               <a href="../../signup-page.php">Sign-up</a>
-               <a href="../../logout-page.php">Logout</a>
+               <a href="../../Login Signup/PHP/login-page.php">Login</a>
+               <a href="../../Login Signup/PHP/signup-page.php">Sign-up</a>
+               <a href="../../Login Signup/PHP/logout-page.php">Logout</a>
             </div>
 
             <div id="navBurger">
@@ -361,7 +361,7 @@
          Copyright &copy; <span id="year"></span> <a href="https://github.com/saad-shaikh-256" target="_blank"> &nbsp;@Saad Shaikh</a>
       </span>
    </section>
-  
+
    <script>
       document.getElementById('year').textContent = new Date().getFullYear();
    </script>
