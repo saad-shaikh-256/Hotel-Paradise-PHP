@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+   /* Colors */
+   --primary-color: #f13b2e;
+   --white-color: #ffffff;
+   --black-color: #212121;
+   --lightGrey-color: #f8f9fb;
+
+   /* Fonts */
+   --heading-font: "Playfair Display", serif;
+   --body-font: "Work Sans", sans-serif;
+
+   ::selection {
+      background-color: var(--black-color);
+      color: var(--white-color);
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: var(--white-color);
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: var(--body-font);
+   scroll-behavior: smooth;
+   display: flex;
+   flex-direction: row;
+}
+
+nav {
+   height: 100dvh;
+   width: 15dvw;
+   background-color: var(--white-color);
+   border-right: 1px solid #d9d9d9;
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 6dvh 2dvh;
+   overflow: hidden;
+}
+
+nav .navButtons {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   font-size: 1rem;
+   padding: 0 2dvh;
+   color: var(--black-color);
+}
+
+nav .navButtons .navLinks {
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+}
+
+nav a,
+nav label {
+   width: 100%;
+   all: unset;
+   display: flex;
+   align-items: center;
+   gap: 1dvh;
+   cursor: pointer;
+   opacity: 80%;
+
+   &:hover {
+      font-size: 1.01rem;
+      font-weight: 600;
+      opacity: 100%;
+      transition: .5s;
+   }
+}
+
+nav .navLinks a:nth-child(1),
+nav .navLinks label:nth-child(1) {
+   font-size: 1.01rem;
+   font-weight: 600;
+   opacity: 100%;
+}
+
+nav img {
+   width: 1.2rem;
+   height: auto;
+}
+
+main {
+   height: 100dvh;
+   width: 85dvw;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+main #Stats {
+   padding: 4dvh 4dvh;
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+main #Stats .statsBox {
+   height: fit-content;
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+   padding: 3dvh 4dvh;
+   background-color: var(--white-color);
+   border: 1px solid rgb(220, 220, 220);
+   border-radius: 1rem;
+}
+
+main #Stats .statsBox1 {
+   height: fit-content;
+   width: 22%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2dvh;
+   padding: 3dvh 4dvh;
+   background-color: var(--white-color);
+   border: 1px solid rgb(220, 220, 220);
+   border-radius: 1rem;
+}
+
+main #Stats .statsBox .statsHeading,
+main #Stats .statsBox1 .statsHeading1 {
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+main #Stats .statsBox .statsLorem,
+main #Stats .statsBox1 .statsLorem1 {
+   font-size: 1.1rem;
+   opacity: 80%;
+}
