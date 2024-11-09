@@ -88,6 +88,7 @@ main form {
    flex-wrap: wrap;
    gap: 2dvh;
    padding: 4dvh 0 2dvh 0;
+   overflow: hidden;
 }
 
 main form div {
@@ -114,6 +115,11 @@ main form div input {
    font-size: 1rem;
    border: 1px solid rgb(220, 220, 220);
    border-radius: 4px;
+
+   &:focus {
+      border: 1px solid var(--primary-color);
+      transition: .5s;
+   }
 }
 
 main form button {
@@ -147,4 +153,334 @@ main a {
 
 main a span {
    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 480px) {
+   main {
+      min-width: 80dvw;
+      max-height: 90dvh;
+      max-width: 90dvw;
+      padding: 4dvh 6dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   main {
+      min-width: 80dvw;
+      max-height: 90dvh;
+      max-width: 90dvw;
+      padding: 4dvh 6dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   main {
+      min-width: 80dvw;
+      max-height: 90dvh;
+      max-width: 90dvw;
+      padding: 4dvh 6dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   main {
+      min-width: 60dvw;
+      max-height: 90dvh;
+      max-width: 90dvw;
+      padding: 4dvh 6dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   main {
+      min-width: 50dvw;
+      max-height: 90dvh;
+      max-width: 80dvw;
+      padding: 4dvh 4dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   main {
+      min-width: 40dvw;
+      max-height: 90dvh;
+      max-width: 80dvw;
+      padding: 4dvh 3dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
+}
+
+@media (min-width: 1601px) {
+   main {
+      min-width: 30dvw;
+      max-height: 90dvh;
+      max-width: 80dvw;
+      padding: 4dvh 2dvw;
+      gap: 3dvh;
+   }
+
+   main #heading {
+      gap: 1dvh;
+   }
+
+   main #heading #mainHeading {
+      font-size: 1.8rem;
+   }
+
+   main #heading #subHeading {
+      font-size: 1.1rem;
+   }
+
+   main form {
+      padding: 4dvh 0 2dvh 0;
+   }
+
+   main form div {
+      gap: 1.2dvh;
+   }
+
+   main form div label {
+      font-size: 1.1rem;
+   }
+
+   main form div input {
+      padding: 1.5dvh 2dvh;
+   }
+
+   main form button {
+      padding: 1.5dvh 2dvh;
+      margin-top: 2dvh;
+   }
+
+   main a {
+      width: 100%;
+   }
 }
