@@ -14,7 +14,7 @@
 <body>
 
    <main>
-      
+
       <div id="heading">
          <div id="mainHeading">Login</div>
          <div id="subHeading">Login into your account</div>
@@ -36,6 +36,8 @@
       </form>
 
       <a href="signup-page.php">Don't have an account <span>Sign-Up!!</span></a>
+      <a href="../../Admin Side/PHP/admin-index.php">Admin Panel</a>
+      <a href="../../User Side/PHP/landing-page.php">User Side</a>
 
    </main>
 

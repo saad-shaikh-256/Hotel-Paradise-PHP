@@ -34,17 +34,17 @@
          </div>
 
          <div class="statsBox1">
-            <div class="statsHeading1">Total Users</div>
+            <div class="statsHeading1">Total Account</div>
             <div class="statsLorem1">145</div>
          </div>
 
          <div class="statsBox1">
-            <div class="statsHeading1">Total Feedbacks</div>
+            <div class="statsHeading1">Total Feedback</div>
             <div class="statsLorem1">23</div>
          </div>
 
          <div class="statsBox1">
-            <div class="statsHeading1">Total Reservation</div>
+            <div class="statsHeading1">Total Booking</div>
             <div class="statsLorem1">50</div>
          </div>
       </div>

@@ -25,6 +25,8 @@
    box-sizing: border-box;
    transition: .5s;
    overflow-wrap: break-word;
+   overflow: hidden;
+   overscroll-behavior: none;
 }
 
 html,
@@ -153,8 +155,168 @@ main #Stats .statsBox1 .statsHeading1 {
    font-size: 1.2rem;
    font-weight: 500;
 }
+
 main #Stats .statsBox .statsLorem,
 main #Stats .statsBox1 .statsLorem1 {
    font-size: 1.1rem;
    opacity: 80%;
 }
+
+@media only screen and (max-width: 480px) {
+
+   nav {
+      height: 100dvh;
+      width: 15dvw;
+      padding: 6dvh 2dvh;
+   }
+
+   nav .navButtons {
+      padding: 0 0dvh;
+   }
+
+   nav label {
+      display: none;
+   }
+
+   nav img {
+      width: 1.2rem;
+      height: auto;
+   }
+
+   main {
+      height: 100dvh;
+      width: 85dvw;
+   }
+
+   main #Stats {
+      padding: 6dvh 2dvh;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1dvh;
+   }
+
+   main #Stats .statsBox {
+      width: 100%;
+      gap: 1.5dvh;
+      padding: 2dvh 2dvh;
+      flex-grow: 1;
+   }
+
+   main #Stats .statsBox1 {
+      height: fit-content;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1.5dvh;
+      padding: 2dvh 2dvh;
+      flex-grow: 1;
+   }
+
+   main #Stats .statsBox .statsHeading,
+   main #Stats .statsBox1 .statsHeading1 {
+      font-size: .9rem;
+      font-weight: 600;
+   }
+
+   main #Stats .statsBox .statsLorem,
+   main #Stats .statsBox1 .statsLorem1 {
+      font-size: .8rem;
+      opacity: 80%;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   nav {
+      height: 100dvh;
+      width: 15dvw;
+      padding: 6dvh 1dvh;
+   }
+
+   nav .navButtons {
+      padding: 0 2dvh;
+   }
+
+   nav label {
+      display: none;
+   }
+
+   nav img {
+      width: 1.2rem;
+      height: auto;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   nav {
+      height: 100dvh;
+      width: 13dvw;
+      padding: 6dvh 2dvw;
+   }
+
+   nav .navButtons {
+      padding: 0 2dvw;
+   }
+
+   nav label {
+      display: none;
+   }
+
+   nav img {
+      width: 1.2rem;
+      height: auto;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   nav {
+      height: 100dvh;
+      width: 10dvw;
+      padding: 6dvh 2dvw;
+   }
+
+   nav .navButtons {
+      padding: 0 2dvw;
+   }
+
+   nav label {
+      display: none;
+   }
+
+   nav img {
+      width: 1.2rem;
+      height: auto;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   nav {
+      height: 100dvh;
+      width: 8dvw;
+      padding: 6dvh 1dvw;
+   }
+
+   nav .navButtons {
+      padding: 0 2dvw;
+   }
+
+   nav label {
+      display: none;
+   }
+
+   nav img {
+      width: 1.2rem;
+      height: auto;
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   nav {
+      height: 100dvh;
+      width: 15dvw;
+      padding: 6dvh 2dvh;
+   }
+}
+
+@media (min-width: 1601px) {}
